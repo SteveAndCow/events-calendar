@@ -1,6 +1,6 @@
 import { gql } from "@apollo/client"; 
 
-export const LOAD_ALL_EVENTS = gql`
+export const GET_ALL_EVENTS = gql`
 # queries all sampleEvents on all fields
 # returns TEvent[]
 query {
@@ -21,7 +21,7 @@ query {
   }
 }
 `;
-export const EVENT_QUERY = gql
+export const GET_EVENT = gql
 `# queries a specific sampleEvent by id on a subset of all fields
 # returns TEvent
 query {
